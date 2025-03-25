@@ -164,13 +164,18 @@ body {
     color: white;
     display: flex;
 }
-.cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
-    position: absolute;
-    font-size: 29px;
-
+.cart-container {
+  position: relative; /* Make the container relative for absolute positioning */
+  display: inline-block; /* Ensure the container is inline-block */
+}
+.cart_quantity_count {
+  position: absolute; /* Position the text absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the element's size */
+  color: white; /* Choose your text color */
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional: Make the text bold */
 }
 .plantname_heading{
    display: flex;
